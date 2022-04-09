@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}  
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: #747474;
+    color: white;
+}
+
+.grid {
+    display: grid;
+    gap: 1rem;
+}
+
+.header {
+    width: calc(100% - 4rem);
+    height: 15rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    margin-top: 1rem;
+    background-color: #2e2c2c;
+}
+
+.title {    
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+.subtitle {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    position: relative;
+}
+
+.subtitle i {
+    margin-bottom: 0;
+    position: absolute;
+    top: 4px;
+    left: -20px;
+
+}
+
+.image {
+    border-radius: 50%;
+    width: 6rem;
+    height: 6rem;
+}
+
+.image img {
+    border-radius: 50%;
+    height: 100%;
+}
+
+.container {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.button {
+    background-color: blueviolet;
+    color: white;
+    height: 1.75rem;
+  
+    display: inline-flex;
+    align-items: center;
+  
+    padding: 0 1.25rem;
+    border-radius: 0.25rem;
+  
+    font-size: 1rem;
+    font-weight: 700;
+  
+    transition-property: background;
+    transition-duration: 0.4s;
+}
+  
+.button:hover {
+    background: red;
+}
+
+a.button i {
+    margin-right: 0.25rem;
+}
+
+
+  
+/*
+body {
+    background-color: #0C0B0B;
+}
+
+.container {
+    width: 45vw;
+    height: 300px;
+    margin: auto;
+    border: 1px solid black;
+    box-sizing: border-box;
+    padding: 30px;
+    margin-top: 25vh;
+    background-color: #0F0E0E;
+    color: #b7b7b7;
+}
+
+.profile img, .profile h1{
+    display: inline-block;
+}
+
+.profile img {
+    border-radius: 50%;
+    width: 100px;
+} */
