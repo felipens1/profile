@@ -17,17 +17,22 @@ img {
 
 body {
     font-family: 'DM Sans', sans-serif;
-    background-color: #747474;
+    background-color: var(--black-color);
     color: white;
+
 }
 
-.grid {
-    display: grid;
-    gap: 1rem;
+:root {
+    --black-color: #0C0B0B;
+    --gray-color: #0F0E0E;
+    --gray-alt-color: #2e2c2c;
+    --white-color: #B7B7B7;
+    --green-color: #046313;
+    --blue-color: #044A7D;
+    --yellow-color: #725200;
 }
 
-.header {
-    width: calc(100% - 4rem);
+.header {    
     height: 15rem;
 
     display: flex;
@@ -35,8 +40,8 @@ body {
     align-items: center;
     justify-content: center;
     
-    margin-top: 1rem;
-    background-color: #2e2c2c;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
 }
 
 .title {    
@@ -73,6 +78,7 @@ body {
 .container {
     margin-left: 2rem;
     margin-right: 2rem;
+    background-color: var(--gray-color);
 }
 
 .button {
@@ -101,30 +107,50 @@ a.button i {
     margin-right: 0.25rem;
 }
 
-
-  
-/*
-body {
-    background-color: #0C0B0B;
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
-.container {
-    width: 45vw;
-    height: 300px;
-    margin: auto;
-    border: 1px solid black;
-    box-sizing: border-box;
-    padding: 30px;
-    margin-top: 25vh;
-    background-color: #0F0E0E;
-    color: #b7b7b7;
+.card {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    background-color: var(--gray-alt-color);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    align-items: flex-start;    
+    padding: 1.5rem;
 }
 
-.profile img, .profile h1{
-    display: inline-block;
+.card p {
+    color: white;
+    font-size: 1.25rem;
 }
 
-.profile img {
-    border-radius: 50%;
-    width: 100px;
-} */
+.card p span {
+    font-size: 2.25rem;
+    font-weight: 700;
+}
+
+#projects {
+    background-color: var(--green-color);
+}
+
+#stars {
+    background-color: var(--blue-color);
+}
+
+#followers {
+    background-color: var(--yellow-color);
+}
+
+@media (min-width: 900px) {
+    .container {
+        max-width: 60vw;
+        margin: 5rem auto;
+    }
+}
